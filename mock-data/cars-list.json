@@ -1,0 +1,103 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "color": "Red",
+      "year": 2016,
+      "make": "Toyota",
+      "engine": 1.4,
+      "price": 8000,
+      "img": "https://cars.usnews.com/static/images/Auto/izmo/i78657/2016_toyota_corolla_angularfront.jpg"
+    },
+    {
+      "id": "2",
+      "color": "White",
+      "year": 2014,
+      "make": "Mercedes",
+      "engine": 2.2,
+      "price": 12500,
+      "img": "https://i0.wp.com/www.car-revs-daily.com/wp-content/uploads/2014/03/The-White-Knight-2014-Mercedes-Benz-E63-AMG-4Matic-S-Model-On-Camera-+-21-All-New-Photos-7.jpg?ssl=1"
+    },
+    {
+      "id": "3",
+      "color": "Black",
+      "year": 2018,
+      "make": "Toyota",
+      "engine": 1.6,
+      "price": 14300,
+      "img": "https://www.carjunction.com/car_images2/49126_60985/60985a.jpg"
+    },
+    {
+      "id": "4",
+      "color": "Silver",
+      "year": 1990,
+      "make": "BMW",
+      "engine": 3.3,
+      "price": 2200,
+      "img": "https://bringatrailer.com/wp-content/uploads/2021/10/1990_bmw_m3_16373532784004ffa83572fda1f6DSC_0127.jpg?fit=940%2C627"
+    },
+    {
+      "id": "5",
+      "color": "Green",
+      "year": 1998,
+      "make": "Mazda",
+      "engine": 2,
+      "price": 1800,
+      "img": "https://photos.carspecs.us/131d3e0e4f3a2ce5618497b27e6366abc592db71-2000.jpg"
+    },
+    {
+      "id": "6",
+      "color": "Yellow",
+      "year": 2023,
+      "make": "Ferrari",
+      "engine": 4.5,
+      "price": 240000,
+      "img": "https://cdn.motor1.com/images/mgl/qkkv6G/s1/2023-ferrari-purosangue-new-rendering.webp"
+    },
+    {
+      "id": "7",
+      "color": "Blue",
+      "year": 2019,
+      "make": "Bugatti",
+      "engine": 6,
+      "price": 320000,
+      "img": "https://www.diecastlegends.com/Images/contentarchive/AUTOart%202018%20Buatti%20Chiron%20Sport%20header.jpg"
+    },
+    {
+      "id": "8",
+      "color": "Silver",
+      "year": 2014,
+      "make": "Ford",
+      "engine": 3.5,
+      "price": 11500,
+      "img": "https://cs.copart.com/v1/AUTH_svc.pdoc00001/LPP596/c283bd81030e4d66b4352f24753cac89_ful.jpg"
+    },
+    {
+      "id": "9",
+      "color": "Black",
+      "year": 2006,
+      "make": "Mercedes",
+      "engine": 2.8,
+      "price": 4500,
+      "img": "https://bringatrailer.com/wp-content/uploads/2021/09/2006_mercedes-benz_c230_sport_16345890527d8fd1b6a87IMG_5311.jpg?fit=940%2C627"
+    },
+    {
+      "id": "10",
+      "color": "White",
+      "year": 2012,
+      "make": "Toyota",
+      "engine": 2.4,
+      "price": 5000,
+      "img": "https://www.primemotorz.com/imagetag/656/main/l/Used-2010-Toyota-Corolla-4DR-S-S-1613079593.jpg"
+    },
+    {
+      "id": "0.46704618322306146",
+      "color": "New car",
+      "year": "2",
+      "make": "mercedes",
+      "engine": "3",
+      "price": "3",
+      "img": "https://edgecast-img.yahoo.net/mysterio/api/A645C3362DA6A36F3F55B89F4B2C833D7209F7BA8D0A541B4B595269FBE0F93E/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/commerce/autodata/images/USD20MBC101A021001.jpg"
+    }
+  ]
+}

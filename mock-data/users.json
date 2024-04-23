@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "email": "lashaiakobadze@gmail.com",
+      "password": "$2a$10$M.q3CY2nqkfE1QKAYXYVOe0bWtI2FQJMkVFgQUnpZtYIvqhjUnAAO",
+      "firstName": "Lasha",
+      "lastName": "Iakobadze",
+      "username": "lashaiakobadze@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "ana.sixarulidze@gmail.com",
+      "password": "$2a$10$BPqtyufaYbhBVjdTasJaPOIDcjR6Bo9pqlHErKj0llw57E4y.lKX2",
+      "firstName": "ANA",
+      "lastName": "SIKHARULIDZE",
+      "username": "admin",
+      "id": 2
+    }
+  ]
+}
