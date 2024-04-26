@@ -49,12 +49,35 @@
       "name": "Yellowtail Rockfish"
     },
     {
-      "id": "0.5202875687455513",
-      "info": "Pristipomoides filamentosus",
-      "region": "azia",
-      "scientificName": "fish",
-      "name": "Sergo Lacabidze",
-      "img": "https://www.aqueon.com/-/media/project/oneweb/aqueon/us/blog/ways-to-know-your-fish-are-happy/fish-are-happy-and-healthy-1.png"
+      "id": 7,
+      "info": "Area closures and gear restrictions protect sensitive rocky, cold-water coral and sponge habitats from bottom trawl gear.",
+      "region": "West Coast, Alaska",
+      "scientificName": "Sebastes paucispinis",
+      "img": "../fishes/640x427-bocaccio.jpg",
+      "name": "Bocaccio"
+    },
+    {
+      "id": 8,
+      "info": null,
+      "region": "West Coast, Greater Atlantic, Alaska",
+      "scientificName": "Saccharina latissima",
+      "img": "../fishes/large-sugar-kelp-leaves.webp",
+      "name": "Sugar Kelp"
+    },
+    {
+      "id": 9,
+      "info": null,
+      "region": "West Coast",
+      "scientificName": "Anoplopoma fimbria",
+      "img": "../fishes/534e2f9f231ceeb4b29de752c1aaf936.jpeg",
+      "name": "Sablefish"
+    },
+    {
+      "id": 10,
+      "region": "Greater Atlantic",
+      "scientificName": "Hippoglossus hippoglossus",
+      "img": "../fishes/1200px-Hippoglossus_hippoglossus2.jpg",
+      "name": "Atlantic Halibut"
     }
   ]
 }
