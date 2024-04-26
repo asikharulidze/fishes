@@ -1,14 +1,56 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "../Modal/Modal";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useLocation , useParams, useSearchParams } from "react-router-dom";
+import { useAuthCont } from '../../context/AuthContext';
 import styles from "./CarCard.module.css";
 import  "./card.css";
-const FishCard = ({id, src, alt, name, title, region, info, onCloseModal}) =>{
-    console.log(id);
+import axios from 'axios';
+
+const API_URL = "http://localhost:9000";
+
+const FishCard = ({id, src, name, title, region, info, onCloseModal, dispatchCards}) =>{
+
     const [searchParams, setSearchParams] = useSearchParams();
-  const carIdQueryParam = searchParams.get("id");
-  const [isShowing, setIsShowing] = useState(carIdQueryParam === id.toString());
+    const carIdQueryParam = searchParams.get("id");
+    const [isShowing, setIsShowing] = useState(carIdQueryParam === id.toString());
     const [likes, setLikes] = useState(0);
+    const { isAuth } = useAuthCont();
+    const { id: queryId } = useParams();
+    const fishIdQueryParam = searchParams.get("id");
+    const [loading, setLoading] = useState(false);
+    const [isFavorite, setIsFavorite] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+        const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        setIsFavorite(favorites.includes(id));
+      }, [id, fishIdQueryParam, queryId]);
+    
+      const toggleFavorite = () => {
+        const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        if (isFavorite) {
+          const updatedFavorites = favorites.filter((favId) => favId !== id);
+          localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        } else {
+          favorites.push(id);
+          localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
+        setIsFavorite(!isFavorite);
+      };
+      const handleDelete = async () => {
+        
+        try {
+          setLoading(true);
+          await axios.delete(`${API_URL}/fishes/${id}`);
+          dispatchCards({ type: "REMOVE_CARD", payload: id });
+          setLoading(false);
+        } catch (error) {
+          console.error('Error:', error);
+          setLoading(false);
+        }
+      };
+      const navigate = useNavigate();
+    
 
 
     const closeModal = () => {
@@ -30,10 +72,13 @@ const FishCard = ({id, src, alt, name, title, region, info, onCloseModal}) =>{
             setLikes(likes-1);
         }
     }
+    
     return(
         <>
-        <div className={styles.card}  >
-            <img src={src} alt={alt} />
+    
+        {(location.pathname.includes('/favorites') && !isFavorite) || <div className={styles.card}  >
+            <button className="" onClick={(e) => {e.stopPropagation();toggleFavorite();}}>{isFavorite ? '❤' : '🤍'}</button>
+            <img src={src}  />
             <div className="container">
                 <h3>{name}</h3>
                 <p className="right">{region}</p>
@@ -42,9 +87,13 @@ const FishCard = ({id, src, alt, name, title, region, info, onCloseModal}) =>{
             </div>
             <div className="card-footer">
                 <button className="likebtn" onClick={()=>showCard()}>Details</button>
+
+                {isAuth &&  (<button className="deletebtn" onClick={(e) => {e.stopPropagation();handleDelete();}}>Delete</button>)}
+
             </div>
 
         </div>
+      } 
         { isShowing && <Modal 
                         Header={name} 
                         onClose={() => closeModal()}

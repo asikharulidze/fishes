@@ -5,11 +5,7 @@
       "info": "Bottomfish fishing operations, typically using weighted lines and baited hooks, do not have adverse impacts to the habitat.",
       "region": "Pacific Islands",
       "scientificName": "Pristipomoides filamentosus",
-      "illustrationPhoto": {
-        "src": "../fishes/Pinksnapper.gif",
-        "alt": "Pink snapper",
-        "title": "Pink snapper"
-      },
+      "img": "../fishes/Pinksnapper.gif",
       "name": "Crimson Jobfish"
     },
     {
@@ -17,11 +13,7 @@
       "info": "Area closures and gear restrictions protect habitats that are affected by some kinds of trawl gear.",
       "region": "Greater Atlantic",
       "scientificName": "Urophycis tenuis",
-      "illustrationPhoto": {
-        "src": "../fishes/urophycis_tenuis_el-1.jpeg",
-        "alt": "Illustration of white hake. Credit: Jack Hornady.",
-        "title": ""
-      },
+      "img": "../fishes/urophycis_tenuis_el-1.jpeg",
       "name": "White Hake"
     },
     {
@@ -29,11 +21,7 @@
       "info": "Area closures and gear restrictions protect habitat that are affected by some types of trawl gear.",
       "region": "Greater Atlantic",
       "scientificName": "Scomber colias",
-      "illustrationPhoto": {
-        "src": "../fishes/640x427-Mackerel-Atlantic-NOAAFisheries.png",
-        "alt": "Illustration of Atlantic chub mackerel",
-        "title": "Atlantic chub mackerel"
-      },
+      "img": "../fishes/640x427-Mackerel-Atlantic-NOAAFisheries.png",
       "name": "Atlantic Chub Mackerel"
     },
     {
@@ -41,11 +29,7 @@
       "info": "Fishing gears used to harvest shortfin squid have minimal impacts on habitat.",
       "region": "Greater Atlantic",
       "scientificName": "Illex illecebrosus",
-      "illustrationPhoto": {
-        "src": "../fishes/shortfin-squid.webp",
-        "alt": "shortfin squid",
-        "title": "Shortfin Squid"
-      },
+      "img": "../fishes/shortfin-squid.webp",
       "name": "Shortfin Squid"
     },
     {
@@ -53,11 +37,7 @@
       "info": "Fishing gears used to harvest American lobster have minimal impacts on habitat.",
       "region": "Greater Atlantic",
       "scientificName": "Homarus americanus",
-      "illustrationPhoto": {
-        "src": "../fishes/640x427-american-lobster.png",
-        "alt": "American Lobster",
-        "title": "American Lobster"
-      },
+      "img": "../fishes/640x427-american-lobster.png",
       "name": "American Lobster"
     },
     {
@@ -65,71 +45,16 @@
       "info": "Most fishing gear used to harvest yellowtail rockfish rarely contacts the ocean floor and has minimal impacts on habitat. Area closures and gear restrictions protect sensitive rocky, cold-water coral and sponge habitats from bottom trawl gear.",
       "region": "West Coast, Alaska",
       "scientificName": "Sebastes flavidus",
-      "illustrationPhoto": {
-        "src": "../fishes/640x427-rockfish_yellowtail_nb_w.jpg",
-        "alt": "Yellowtail rockfish",
-        "title": "Yellowtail rockfish"
-      },
+      "img": "../fishes/640x427-rockfish_yellowtail_nb_w.jpg",
       "name": "Yellowtail Rockfish"
     },
     {
-      "id": 7,
-      "info": "Area closures and gear restrictions protect sensitive rocky, cold-water coral and sponge habitats from bottom trawl gear.",
-      "region": "West Coast, Alaska",
-      "scientificName": "Sebastes paucispinis",
-      "illustrationPhoto": {
-        "src": "../fishes/640x427-bocaccio.jpg",
-        "alt": "Illustration of a Bocaccio rockfish.",
-        "title": "Bocaccio rockfish."
-      },
-      "name": "Bocaccio"
-    },
-    {
-      "id": 8,
-      "info": null,
-      "region": "West Coast, Greater Atlantic, Alaska",
-      "scientificName": "Saccharina latissima",
-      "illustrationPhoto": {
-        "src": "../fishes/large-sugar-kelp-leaves.webp",
-        "alt": "",
-        "title": ""
-      },
-      "name": "Sugar Kelp"
-    },
-    {
-      "id": 9,
-      "info": null,
-      "region": "West Coast",
-      "scientificName": "Anoplopoma fimbria",
-      "illustrationPhoto": {
-        "src": "../fishes/534e2f9f231ceeb4b29de752c1aaf936.jpeg",
-        "alt": "",
-        "title": ""
-      },
-      "name": "Sablefish"
-    },
-    {
-      "id": 10,
-      "region": "Greater Atlantic",
-      "scientificName": "Hippoglossus hippoglossus",
-      "illustrationPhoto": {
-        "src": "../fishes/1200px-Hippoglossus_hippoglossus2.jpg",
-        "alt": "Illustration of Atlantic Halibut.",
-        "title": "Illustration of Atlantic Halibut."
-      },
-      "name": "Atlantic Halibut"
-    },
-    {
-      "id": "0.4294690222932769",
+      "id": "0.5202875687455513",
       "info": "Pristipomoides filamentosus",
-      "region": "Greater Atlantic",
+      "region": "azia",
       "scientificName": "fish",
-      "name": "nino",
-      "illustrationPhoto": {
-      "src": "https://www.aqueon.com/-/media/project/oneweb/aqueon/us/blog/ways-to-know-your-fish-are-happy/fish-are-happy-and-healthy-1.png",
-      "alt": "Illustration of Atlantic Halibut.",
-      "title": "Illustration of Atlantic Halibut."
-        }
+      "name": "Sergo Lacabidze",
+      "img": "https://www.aqueon.com/-/media/project/oneweb/aqueon/us/blog/ways-to-know-your-fish-are-happy/fish-are-happy-and-healthy-1.png"
     }
   ]
 }

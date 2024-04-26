@@ -3,7 +3,7 @@ import fishReducer from "./fishReducer";
 // import { getCars } from "../../services/carsApi";
 import { getFish } from "../../services/fishApi";
 
-const CarsContext = createContext();
+const FishContext = createContext();
 
 export const CarsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(fishReducer, []);
@@ -17,10 +17,10 @@ export const CarsProvider = ({ children }) => {
   }, []);
 
   return (
-    <CarsContext.Provider value={{ state, dispatch }}>
+    <FishContext.Provider value={{ state, dispatch }}>
       {children}
-    </CarsContext.Provider>
+    </FishContext.Provider>
   );
 };
 
-export const useCars = () => useContext(CarsContext);
+export const useCars = () => useContext(FishContext);

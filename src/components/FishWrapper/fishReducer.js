@@ -3,17 +3,17 @@ const fishReducer = (state, action) => {
     case "SET_CARDS":
       return {
         ...state,
-        carsList: action.payload,
+        fishList: action.payload,
       };
     case "ADD_CARD":
       return {
         ...state,
-        carsList: [...state.carsList, action.payload],
+        fishList: [...state.fishList, action.payload],
       };
     case "REMOVE_CARD":
       return {
         ...state,
-        carsList: state.carsList.filter((fish) => fish.id !== action.payload),
+        fishList: state.fishList && state.fishList.filter((fish) => fish.id !== action.payload),
       };
     case "LOADING":
       return {

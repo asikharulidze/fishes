@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
 import { useLoaderData, useNavigate, Outlet } from "react-router-dom";
-import styles from "./CarsWrapper.module.css";
+import styles from "./FishWrapper.module.css";
 import FishCard from "../CarCard/FishCard";
 import { getFish } from "../../services/fishApi";
 import cardsReducer from "./fishReducer";
@@ -8,22 +8,21 @@ import { nanoid } from 'nanoid';
 import { useAuthCont } from "../../context/AuthContext";
 export async function carsLoader() {
   const fish = await getFish();
-
   return fish;
 }
 
-const CardsWrapper = () => {
+const FishWrapper = () => {
   const { isAuth, user } = useAuthCont();
 
   const navigate = useNavigate();
   const cards = useLoaderData();
   const [cardsState, dispatchCards] = useReducer(cardsReducer, {
-    cardsList: cards,
+    fishList: cards,
     loading: false,
   });
 
   return (
-    <div  className={styles.cardsWrapper}>
+    <div  className={styles.FishWrapper}>
       {cardsState.loading && <div>Loading...</div>}
       {isAuth ? 
         <button onClick={() => navigate("/fishes/create")} className={"p-4 mb-4 mt-4 text-sm text-green-800 rounded-lg bg-green-50"}>
@@ -38,17 +37,17 @@ const CardsWrapper = () => {
 
       <Outlet context={{ dispatchCards }} />
       <div className={styles.cardsContainer}>
-        {cardsState.cardsList.map((fish) => {
+        {cardsState.fishList.map((fish) => {
           return (
             <FishCard 
                     key={nanoid()}
                     id={fish.id}
-                    src={fish?.illustrationPhoto?.src || "fishes/demo.jpg"} 
-                    alt={fish?.illustrationPhoto?.alt || "no image"} 
+                    src={fish?.img || "fishes/demo.jpg"} 
                     title={fish.scientificName}
                     region={fish.region}
                     name={fish.name}
                     info={fish.info}
+                    dispatchCards={dispatchCards}
                     onCloseModal={() => navigate("/fishes")}
                     />
           );
@@ -58,4 +57,4 @@ const CardsWrapper = () => {
   );
 };
 
-export default CardsWrapper;
+export default FishWrapper;

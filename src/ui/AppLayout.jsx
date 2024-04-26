@@ -35,8 +35,8 @@ function AppLayout() {
         <NavBarItem title="Home" to="/" />
         <NavBarItem title="fishes" to="/fishes" />
         <NavBarItem title="About" to="/about" />
-        <NavBarItem title="Contact" to="/contact" />
-        <button className="text-white" onClick={handleAuthAction}>
+        <NavBarItem title="Favorites" to="/favorites" />
+        <button className="text-white pl-3" onClick={handleAuthAction}>
           {isAuth ? "Log out" : "Log in"}
         </button>
       </NavBar>

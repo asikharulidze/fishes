@@ -2,7 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "./ui/AppLayout";
 import Home from "./ui/Home";
 import Error from "./ui/Error";
-import CarsWrapper, { carsLoader } from "./components/CarsWrapper/CarsWrapper";
+import FishWrapper, { carsLoader } from "./components/FishWrapper/FishWrapper";
+
 import CreateCarForm from "./components/CreateCarForm/CreateCarForm";
 import AuthContextProvider from "./context/AuthContext";
 import PrivateRoute from "./components/PrivateRoute";
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/fishes",
-        element: <CarsWrapper />,
+        element: <FishWrapper />,
         loader: carsLoader,
         errorElement: <Error />,
         children: [
@@ -41,7 +42,15 @@ const router = createBrowserRouter([
               </PrivateRoute>
             ),
           },
+          
         ],
+      },
+      {
+        path: "/favorites",
+        loader: carsLoader,
+        element: (
+            <FishWrapper />
+        ),
       },
       {
         path: "/auth",
